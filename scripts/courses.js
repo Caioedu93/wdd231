@@ -11,7 +11,7 @@ function displayCourses(courseList) {
             courseCard.classList.add('completed');
         }
         courseCard.innerHTML = `
-            <h3>${course.subject} ${course.number}</h3>
+            <h2>${course.subject} ${course.number}</h2>
             <p>${course.title}</p>
             <p>Credits: ${course.credits}</p>
         `;
