@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Eduardo">
+    <title> Caio Eduardo J. de Paula - WDD 231 - Web Frontend Development 1</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico">
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content=" Caio Eduardo Home Page">
+    <meta property="og:description"
+        content="Know a little more about Caio a student of WDD 231 - Web Frontend Development 1">
+    <meta property="og:type" content="article">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/Caioedu93/wdd230/5e78e46596ccca07237630bac7c8293a0b93cfdb/images/profile.jpeg">
+    <meta property="og:url" content="https://caioedu93.github.io/wdd230/">
+    <meta name="twitter:card" content="summary_large_image">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/course-list.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1><img src="images/profile.webp" width="250" height="250" alt="Caio Edudardo">Caio Eduardo J. de Paula</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <div id="hamburger">
+            <span id="indicator">&#8801;</span>
+        </div>
+        <div class="wayfinder"></div>
+    </nav>
+
+    <main>
+        <div class="item1">
+            <h1>Course work</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="item2">
+            <h1>São Paulo, Brazil</h1><img src="images/train.webp" width="300" height="300" alt="Caio Edudardo">
+            <p>Train Station, São Paulo</p>
+        </div>
+        <div class="item3">
+            <h1>Web and Computer Programming Certificate</h1>
+            <div class="buttons"> <button onclick="filterCourses('all')">All Courses</button> <button
+                    onclick="filterCourses('WDD')">WDD Courses</button> <button onclick="filterCourses('CSE')">CSE
+                    Courses</button> </div>
+            <div id="course-list" class="course-list"></div>
+            <div id="totalCredits"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            Caio Eduardo J. de Paula
+            Brazil
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+
+
+
+</body>
+
+</html>
