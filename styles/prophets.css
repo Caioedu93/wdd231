@@ -83,26 +83,26 @@ button:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+#hamburger-menu {
+    display: none;
+}
 
+#filter-buttons {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Style for smaller screens */
 @media screen and (max-width: 768px) {
-
-    #cards {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    /* Hamburger Menu */
     #hamburger-menu {
         display: block;
-        text-align: center;
-    }
-
-    #hamburger-btn {
-        font-size: 2rem;
-        background: none;
-        border: none;
-        cursor: pointer;
-        margin: 10px;
-        padding: 10px;
+        text-align: left;
     }
 
     #filter-buttons {
