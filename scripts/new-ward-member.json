@@ -1,86 +1,65 @@
 [
     {
-        "family Name": "Sivira",
-        "date moved in": 2019,
-        "number of members": 4,
-        "visited by bishopric": true,
-        "individual members": [
-            {
-                "name": "Humberto Sivira",
-                "gender": "male",
-                "birthdate": "1987-04-15"
-            },
-            {
-                "name": "Ismenia Sivira",
-                "gender": "Female",
-                "birthdate": "1981-07-13"
-            },
-            {
-                "name": "Lucas Sivira",
-                "gender": "male",
-                "birthdate": "2016-11-05"
-            },
-            {
-                "name": "Tomas Sivira",
-                "gender": "male",
-                "birthdate": "2018-06-17"
-            }
-        ]
+        "name": "Company One",
+        "address": "123 Main St, City, Country",
+        "phone": "+1 (555) 123-4567",
+        "website": "http://www.companyone.com",
+        "image": "companyone.png",
+        "membershipLevel": 1,
+        "otherInfo": "Additional information about Company One."
     },
     {
-        "family Name": "de Paula",
-        "date moved in": 2020,
-        "number of members": 3,
-        "visited by bishopric": false,
-        "individual members": [
-            {
-                "name": "Caio de Paula",
-                "gender": "male",
-                "birthdate": "1993-12-15"
-            },
-            {
-                "name": "Stephanie de Paula",
-                "gender": "Female",
-                "birthdate": "1996-09-19"
-            },
-            {
-                "name": "Victória de Paula",
-                "gender": "Female",
-                "birthdate": "2013-11-10"
-            }
-        ]
+        "name": "Company Two",
+        "address": "456 Elm St, City, Country",
+        "phone": "+1 (555) 234-5678",
+        "website": "http://www.companytwo.com",
+        "image": "companytwo.png",
+        "membershipLevel": 2,
+        "otherInfo": "Additional information about Company Two."
     },
     {
-        "family Name": "Reina",
-        "date moved in": 2022,
-        "number of members": 5,
-        "visited by bishopric": true,
-        "individual members": [
-            {
-                "name": "Pablo Reina",
-                "gender": "male",
-                "birthdate": "1989-05-12"
-            },
-            {
-                "name": "Karoley Reina",
-                "gender": "Female",
-                "birthdate": "1990-07-01"
-            },
-            {
-                "name": "Sebastian Reina",
-                "gender": "male",
-                "birthdate": "2011-09-14"
-            },
-            {
-                "name": "Julieta Reina",
-                "gender": "Female",
-                "birthdate": "2015-05-17"
-            },
-            {
-                "name": "Pablo Elias Reina",
-                "gender": "male",
-                "birthdate": "2017-08-06"
-            }
-        ]
+        "name": "Company Three",
+        "address": "789 Oak St, City, Country",
+        "phone": "+1 (555) 345-6789",
+        "website": "http://www.companythree.com",
+        "image": "companythree.png",
+        "membershipLevel": 3,
+        "otherInfo": "Additional information about Company Three."
+    },
+    {
+        "name": "Company Four",
+        "address": "101 Pine St, City, Country",
+        "phone": "+1 (555) 456-7890",
+        "website": "http://www.companyfour.com",
+        "image": "companyfour.png",
+        "membershipLevel": 1,
+        "otherInfo": "Additional information about Company Four."
+    },
+    {
+        "name": "Company Five",
+        "address": "202 Maple St, City, Country",
+        "phone": "+1 (555) 567-8901",
+        "website": "http://www.companyfive.com",
+        "image": "companyfive.png",
+        "membershipLevel": 2,
+        "otherInfo": "Additional information about Company Five."
+    },
+    {
+        "name": "Company Six",
+        "address": "303 Birch St, City, Country",
+        "phone": "+1 (555) 678-9012",
+        "website": "http://www.companysix.com",
+        "image": "companysix.png",
+        "membershipLevel": 3,
+        "otherInfo": "Additional information about Company Six."
+    },
+    {
+        "name": "Company Seven",
+        "address": "404 Cedar St, City, Country",
+        "phone": "+1 (555) 789-0123",
+        "website": "http://www.companyseven.com",
+        "image": "companyseven.png",
+        "membershipLevel": 1,
+        "otherInfo": "Additional information about Company Seven."
     }
 ]

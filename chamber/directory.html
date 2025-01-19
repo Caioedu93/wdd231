@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Eduardo">
+    <title> The São Paulo Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+
+
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content=" Caio Eduardo Home Page">
+    <meta property="og:description" content="The São Paulo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://caioedu93.github.io/wdd231/chamber/images/logo.png">
+    <meta property="og:url" content="directory.html">
+    <!-- Twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@USOYKIOHRA" />
+    <meta name="twitter:title" content="The São Paulo Chamber of Commerce" />
+    <meta name="twitter:description" content="The São Paulo Chamber of Commerce" />
+    <meta name="twitter:image" content="https://caioedu93.github.io/wdd231/chamber/images/logo.png" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="social-media">
+                <a href="https://www.facebook.com/yourpage" target="_blank"> <img src="images/facebook.png"
+                        alt="Facebook"></a>
+                <a href="https://www.twitter.com/yourpage" target="_blank"> <img src="images/twitter.png"
+                        alt="Twitter"></a>
+                <a href="https://www.instagram.com/yourpage" target="_blank"> <img src="images/instagram.png"
+                        alt="Instagram"></a>
+            </div>
+            <div class="contact-info"> depaulacaio10@gmail.com </div>
+        </div>
+        <div class="main-header">
+            <div class="logo"><img src="images/logo.png" alt="chamber logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <div id="view-toggle"> <button id="grid-view">Grid View</button> <button id="list-view">List View</button>
+        </div>
+        <div id="membership-levels">
+            <h3>Membership Levels</h3>
+            <ul>
+                <li><strong>Member (Level 1):</strong> Basic membership with access to standard resources and events.
+                </li>
+                <li><strong>Silver (Level 2):</strong> Enhanced membership with additional benefits such as discounts
+                    and exclusive content.</li>
+                <li><strong>Gold (Level 3):</strong> Premium membership with all benefits, including VIP access to
+                    events and personalized support.</li>
+            </ul>
+        </div>
+        <div id="member-container" class="grid-view"></div>
+        <footer>
+            <div class="footer-content" id="footer-content"></div>
+            <div class="footer-bottom">
+                <p id="lastModified"></p>
+                <p>&copy; WDD231 | Caio Eduardo Jesus de Paula | Brasil</p>
+            </div>
+        </footer>
+ </body>
+
+</html>

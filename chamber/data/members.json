@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Alpha Corp",
+        "address": "123 Avenida Paulista, São Paulo, SP, Brazil",
+        "phone": "+1 (555) 123-4567",
+        "website": "http://www.companyone.com",
+        "image": "alpha-corp.jpeg",
+        "membershipLevel": 1,
+        "otherInfo": "Global leader in tech solutions."
+    },
+    {
+        "name": "Beta Solutions",
+        "address": "456 Rua Augusta, São Paulo, SP, Brazil",
+        "phone": "+1 (555) 234-5678",
+        "website": "http://www.companytwo.com",
+        "image": "beta-solutions.jpeg",
+        "membershipLevel": 2,
+        "otherInfo": "Innovative consulting services."
+    },
+    {
+        "name": "Gamma Industries",
+        "address": "789 Avenida Faria Lima, São Paulo, SP, Brazil",
+        "phone": "+1 (555) 345-6789",
+        "website": "http://www.companythree.com",
+        "image": "gamma-industries.jpeg",
+        "membershipLevel": 3,
+        "otherInfo": "Manufacturer of industrial products."
+    },
+    {
+        "name": "Tech Solutions",
+        "address": "321 Rua Haddock Lobo, São Paulo, SP, Brazil",
+        "phone": "+1 (555) 456-7890",
+        "website": "http://www.companyfour.com",
+        "image": "tech-solutions.jpg",
+        "membershipLevel": 1,
+        "otherInfo": "Finance and investment services."
+    },
+    {
+        "name": "Green Energy Inc",
+        "address": "654 Avenida Berrini, São Paulo, SP, Brazil",
+        "phone": "+1 (555) 567-8901",
+        "website": "http://www.companyfive.com",
+        "image": "green-energy.jpeg",
+        "membershipLevel": 2,
+        "otherInfo": "Pioneers in renewable energy."
+    },
+    {
+        "name": "Logistics Pro",
+        "address": "987 Rua Oscar Freire, São Paulo, SP, Brazil",
+        "phone": "+1 (555) 678-9012",
+        "website": "http://www.companysix.com",
+        "image": "logistic-pro.jpeg",
+        "membershipLevel": 3,
+        "otherInfo": "Experts in supply chain logistics."
+    },
+    {
+        "name": "Bright Ideas Marketing",
+        "address": "213 Rua Consolação, São Paulo, SP, Brazil",
+        "phone": "+1 (555) 789-0123",
+        "website": "http://www.companyseven.com",
+        "image": "bright-ideas.jpeg",
+        "membershipLevel": 1,
+        "otherInfo": "Marketing and branding specialists."
+    }
+]
