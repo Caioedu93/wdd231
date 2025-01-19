@@ -105,12 +105,16 @@ nav ul li a:hover {
 .hero-content button {
     margin: 10px;
     padding: 10px 20px;
-    background-color: #007BFF;
+    background-color: #0b117b;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
     position: relative;
     z-index: 3;
+}
+
+.hero-content button:hover{
+    background-color: #FF0000;
 }
 
 
@@ -197,7 +201,8 @@ footer {
 }
 
 .news-updates .newsletter-signup button {
-    background-color: #FF0000;
+    background-color: #0b117b;
+    ;
     color: #FFFFFF;
 }
 
@@ -409,14 +414,24 @@ footer {
         right: 0;
     }
 
+    .hero {
+        padding: 30px 10px; 
+        max-height: 50vh; 
+    }
+
+    .hero-image {
+        height: auto; 
+        object-fit: cover; 
+        overflow: hidden;
+    }
+
     .hero-content h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     .hero-content p {
-        font-size: 1em;
+        font-size: 0.9em;
     }
-
     .footer-newsletter form {
         flex-direction: column;
         align-items: center;
