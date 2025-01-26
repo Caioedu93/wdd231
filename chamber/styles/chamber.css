@@ -3,9 +3,11 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 h2 {
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
@@ -13,6 +15,7 @@ p,
 a,
 button,
 input {
+    padding: 8px;
     font-weight: 400;
 }
 
@@ -44,13 +47,13 @@ header {
 }
 
 nav ul {
-    list-style: none;
     display: flex;
-    gap: 20px;
-    position: relative;
-    top: 70px;
-    right: 25rem;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
+
 
 nav ul li {
     border: 2px solid;
@@ -113,7 +116,7 @@ nav ul li a:hover {
     z-index: 3;
 }
 
-.hero-content button:hover{
+.hero-content button:hover {
     background-color: #FF0000;
 }
 
@@ -135,6 +138,7 @@ nav ul li a:hover {
 .services,
 .events,
 .news-updates,
+.weather,
 .member-spotlight,
 .contact-us,
 footer {
@@ -149,6 +153,7 @@ footer {
 .event-highlights,
 .news,
 .newsletter-signup,
+.weather,
 .contact-form,
 .contact-details,
 .footer-links,
@@ -202,9 +207,21 @@ footer {
 
 .news-updates .newsletter-signup button {
     background-color: #0b117b;
-    ;
     color: #FFFFFF;
 }
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fdfd96;
+    color: #00008B;
+    height: 35vh;
+    text-align: center;
+    gap: 1rem;
+}
+
 
 .member-spotlight {
     background-color: #D3D3D3;
@@ -264,30 +281,15 @@ footer {
 
 .footer-newsletter form {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 }
 
-.footer-newsletter input[type="email"] {
-    padding: 5px;
-    margin-bottom: 5px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    position: relative;
-    left: 20%;
-}
-
-
+.footer-newsletter input[type="email"],
 .footer-newsletter button {
-    padding: 5px 10px;
-    background-color: #0e0893;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    position: relative;
-    left: 20%;
-    bottom: 5px;
+    width: 80%;
+    max-width: 300px;
+    margin: 5px 0;
 }
 
 .footer-newsletter button:hover {
@@ -396,6 +398,46 @@ footer {
     border-radius: 5px;
 }
 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #FFF;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+
+nav ul li a.active {
+    color: #FFD700;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
 
     .main-header,
@@ -404,34 +446,70 @@ footer {
     .footer-content {
         flex-direction: column;
         align-items: center;
+        position: relative;
+    }
+
+    .hamburger {
+        text-align: center;
+        display: flex;
     }
 
     nav ul {
         flex-direction: column;
+        align-items: center;
+        background-color: #0056b3;
         gap: 10px;
-        position: relative;
-        top: 0;
-        right: 0;
     }
 
+    nav ul.hidden {
+        display: none;
+    }
+
+
     .hero {
-        padding: 30px 10px; 
-        max-height: 50vh; 
+        padding: 30px 10px;
+        max-height: 50vh;
     }
 
     .hero-image {
-        height: auto; 
-        object-fit: cover; 
+        height: auto;
+        object-fit: cover;
         overflow: hidden;
     }
 
     .hero-content h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
+
+    .hero-content button {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
 
     .hero-content p {
         font-size: 0.9em;
     }
+
+    .about-us img {
+        display: none;
+    }
+
+    .about-us {
+        position: relative;
+        top: 24rem;
+        padding-bottom: 10px;
+    }
+
+    .services {
+        position: relative;
+        top: 23rem;
+    }
+
+    .weather {
+        height: 40vh;
+    }
+
     .footer-newsletter form {
         flex-direction: column;
         align-items: center;

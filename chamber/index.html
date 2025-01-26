@@ -10,23 +10,22 @@
     <link rel="stylesheet" href="styles/chamber.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/weather-api.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
 
 
 
-    <!--  Essential META Tags -->
-    <meta property="og:title" content=" Caio Eduardo Home Page">
+
+    <!-- Essential META Tags -->
+    <meta name="description"
+        content="Discover the latest updates from the São Paulo Chamber of Commerce, including company spotlights and current weather information with a three-day forecast.">
+    <meta property="og:title" content=" Chamber Home Page">
     <meta property="og:description" content="The São Paulo Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://caioedu93.github.io/wdd231/chamber/images/logo.png">
-    <meta property="og:url" content="directory.html">
-    <!-- Twitter meta tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@USOYKIOHRA" />
-    <meta name="twitter:title" content="The São Paulo Chamber of Commerce" />
-    <meta name="twitter:description" content="The São Paulo Chamber of Commerce" />
-    <meta name="twitter:image" content="https://caioedu93.github.io/wdd231/chamber/images/logo.png" />
-    <script src="scripts/getdates.js" defer></script>
-
+    <meta property="og:url" content="https://caioedu93.github.io/wdd231/chamber/index.html">
 
 </head>
 
@@ -36,8 +35,8 @@
             <div class="social-media">
                 <a href="https://www.facebook.com/yourpage" target="_blank"> <img src="images/facebook.webp"
                         alt="Facebook" loading="lazy"></a>
-                <a href="https://www.twitter.com/yourpage" target="_blank"> <img src="images/twitter.webp"
-                        alt="Twitter" loading="lazy"></a>
+                <a href="https://www.twitter.com/yourpage" target="_blank"> <img src="images/twitter.webp" alt="Twitter"
+                        loading="lazy"></a>
                 <a href="https://www.instagram.com/yourpage" target="_blank"> <img src="images/instagram.webp"
                         alt="Instagram" loading="lazy"></a>
             </div>
@@ -45,7 +44,12 @@
         </div>
         <div class="main-header">
             <div class="logo"><img src="images/logo.webp" alt="chamber logo" loading="lazy"></div>
-            <nav>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav id="nav-menu" class="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Discover</a></li>
@@ -61,7 +65,7 @@
             <p>Empowering businesses in São Paulo</p> <button>Join Now</button> <button>Learn More</button>
         </div>
         <div class="hero-image">
-            <img src="images/hover-image.webp" alt="São Paulo Skyline" loading="lazy">
+            <img src="images/hero-image.webp" alt="São Paulo Skyline" loading="lazy">
         </div>
     </section>
     <section class="about-us">
@@ -146,28 +150,44 @@
         </div>
     </section>
 
-    <section class="member-spotlight">
-        <h2>Member Spotlight</h2>
-        <div class="spotlight-member">
-            <p>Meet John Doe, our Senior Consultant. John has been with us for over 5 years and has helped dozens of
-                companies streamline their operations and maximize profits.</p>
+    <section class="weather">
+        <h2>Weather</h2>
+        <div class="card">
+            <h2 id="town"></h2>
+            <img id="graphic" src="" alt="">
+            <p id="description"></p>
+            <p id="temperature"></p>
         </div>
     </section>
+    <section id="spotlights">
+        <h2>Member Spotlights</h2>
+        <div id="spotlight-cards"></div>
+    </section>
+
+    <div id="forecast-container"></div>
+
 
     <section class="contact-us">
         <div class="contact-form">
             <h2>Contact Us</h2>
             <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Your Name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Your Email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+
                 <button type="submit">Send</button>
             </form>
+
         </div>
         <div class="contact-details">
             <h2>Our Location</h2>
             <p>Address: 123 Business Ave, Suite 456, São Paulo, Brazil</p>
-            <p>Phone: +1 (555) 987-6543</p>
+            <p>Phone: +55 (11) 98725-6543</p>
             <p>Email: contact@fakecompany.com</p>
         </div>
     </section>
@@ -179,6 +199,7 @@
             <p>&copy; WDD231 | Caio Eduardo Jesus de Paula | Brasil</p>
         </div>
     </footer>
+
 
 </body>
 
