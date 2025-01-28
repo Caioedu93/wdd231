@@ -15,6 +15,10 @@ function displayCourses(courseList) {
             <p>${course.title}</p>
             <p>Credits: ${course.credits}</p>
         `;
+
+        
+        courseCard.addEventListener('click', () => showCourseDetails(course));
+
         courseListEl.appendChild(courseCard);
     });
 
@@ -30,7 +34,29 @@ function filterCourses(type) {
         filteredCourses = courses.filter(course => course.subject.startsWith(type));
     }
     displayCourses(filteredCourses);
+
+  
+    document.querySelectorAll('.buttons button').forEach(button => button.classList.remove('active'));
+    document.querySelector(`.buttons button[data-type="${type}"]`).classList.add('active');
 }
 
-// Initial display of all courses
+function showCourseDetails(course) {
+    const courseDetailsDialog = document.getElementById('course-details');
+    courseDetailsDialog.innerHTML = `
+        <button onclick="closeDialog()">Close</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <p><strong>Title:</strong> ${course.title}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        <p><strong>Completed:</strong> ${course.completed ? 'Yes' : 'No'}</p>
+    `;
+    courseDetailsDialog.showModal();
+}
+
+function closeDialog() {
+    document.getElementById('course-details').close();
+}
+
+
 filterCourses('all');
