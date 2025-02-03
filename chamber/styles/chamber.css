@@ -153,7 +153,7 @@ footer {
 .event-highlights,
 .news,
 .newsletter-signup,
-.weather, 
+.weather,
 .contact-form,
 .contact-details,
 .footer-links,
@@ -220,7 +220,7 @@ footer {
     height: 100vh;
     text-align: center;
     gap: 1rem;
-    padding: 10px; 
+    padding: 10px;
 }
 
 #forecast-container {
@@ -248,14 +248,14 @@ footer {
 }
 
 .forecast-card img {
-    width: 60px; 
+    width: 60px;
     height: 60px;
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
 }
 
 .forecast-card h3 {
-    font-size: 1rem; 
+    font-size: 1rem;
     margin: 0.5rem 0;
     color: #00008B;
 }
@@ -273,7 +273,7 @@ footer {
 }
 
 .forecast-card .description {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     color: #00008B;
 }
 
@@ -405,7 +405,7 @@ footer {
     margin-bottom: 10px;
 }
 
-#member-container.grid-view .member-card{
+#member-container.grid-view .member-card {
     display: inline-block;
     width: 30%;
     margin: 10px;
@@ -427,7 +427,7 @@ footer {
     color: #0056b3;
 }
 
-#member-container.list-view .member-card{
+#member-container.list-view .member-card {
     display: flex;
     width: 90%;
     margin: 10px auto;
@@ -452,16 +452,17 @@ footer {
     border-radius: 5px;
 }
 
-.member-spotlight h2{
+.member-spotlight h2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 #spotlight-cards.grid-view {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 1rem; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
     margin: 1rem 0;
 }
 
@@ -472,10 +473,10 @@ footer {
     padding: 0.5rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
 }
 
-#spotlight-cards.grid-view .spotlight-card img{
+#spotlight-cards.grid-view .spotlight-card img {
     width: 80px;
     height: 80px;
     border-radius: 0.5rem;
@@ -483,7 +484,7 @@ footer {
 }
 
 #spotlight-cards.grid-view .spotlight-card h3 {
-    font-size: 1rem; 
+    font-size: 1rem;
     margin: 0.5rem 0;
 }
 
@@ -544,7 +545,145 @@ nav ul li a.active {
     font-weight: bold;
 }
 
+.design {
+    background-color: #f9f9f9;
+    color: #00008B;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.design h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0056b3;
+}
+
+.design form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.design input,
+.join-page button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.design button {
+    background-color: #0056b3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.design button:hover {
+    background-color: #FF0000;
+}
+
+#results {
+    position: relative;
+    top: 100px;
+    margin-top: auto;
+    background-color: #D3D3D3;
+    color: #00008B;
+    text-align: center;
+}
+
+.thankyou-message h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+#results p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+
+}
+
+.membership-section {
+    margin-top: 40px;
+    margin-bottom: 40px; 
+    display: flex;
+    justify-content: center;
+}
+
+.membership-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.membership-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: SlideIn 2s ease-out forwards;
+}
+.membership-card h3.p {
+    color: #000000;
+}
+#bronze-card p{
+    color: hsl(0, 100%, 99%);
+}
+#bronze-card h3{
+    color: #ffffff;
+}
+
+#np-card { background-color: #8ede3d; animation-delay: 0.2s; }
+#bronze-card{ background-color: #983300; animation-delay: 0.4s; }
+#silver-card { background-color: #c0c0c0; animation-delay: 0.6s; }
+#gold-card{ background-color: #ffd700; animation-delay: 0.8s; }
+
+.membership-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
 @media (max-width: 768px) {
+    .membership-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    
+    dialog {
+        padding: 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    dialog::backdrop {
+        background: rgba(0, 0, 0, 0.6);
+    }
 
     .main-header,
     .service-items,
@@ -612,40 +751,40 @@ nav ul li a.active {
         top: 23rem;
     }
 
-      
-      .weather {
-        height: auto; 
-        padding: 20px; 
+
+    .weather {
+        height: auto;
+        padding: 20px;
     }
 
     #forecast-container {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         width: 100%;
     }
 
     .forecast-card {
-        padding: 0.8rem; 
+        padding: 0.8rem;
     }
 
     .forecast-card img {
-        width: 50px; 
+        width: 50px;
         height: 50px;
     }
 
     .forecast-card h3 {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 
     .forecast-card .temp {
-        font-size: 1.2rem; 
+        font-size: 1.2rem;
     }
 
     .forecast-card .description {
-        font-size: 0.85rem; 
+        font-size: 0.85rem;
     }
 
     .weather {
-        overflow: hidden; 
+        overflow: hidden;
     }
 
 
