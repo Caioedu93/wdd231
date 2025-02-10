@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Paulista Avenue ",
+    "image": "avpaulista.webp",
+    "address": "Avenida Paulista, São Paulo, SP",
+    "description": "Paulista Avenue is one of the most famous streets in São Paulo, known for its cultural institutions, shopping centers, and business hubs.",
+    "url":"https://pt.wikipedia.org/wiki/Avenida_Paulista"
+  },
+  {
+    "name": "Ibirapuera Park",
+    "image": "parque.webp",
+    "address": "Av. Pedro Álvares Cabral, São Paulo, SP",
+    "description": "Ibirapuera Park is a large urban park offering museums, green spaces, and cultural events in São Paulo.",
+    "url": "https://www.parquedoibirapuera.org/"
+  },
+  {
+    "name": "Municipal Market",
+    "image": "mercado.webp",
+    "address": "Rua da Cantareira, 306, São Paulo, SP",
+    "description": "Famous for its delicious mortadella sandwiches and exotic fruits, this market is a must-visit for food lovers.",
+    "url":"https://www.mercadomunicipalsp.com/"
+  },
+  {
+    "name": "Sé's Cathedral",
+    "image": "catedral.webp",
+    "address": "Praça da Sé, São Paulo, SP",
+    "description": "One of the largest churches in Brazil, featuring stunning Neo-Gothic architecture.",
+    "url":"https://en.wikipedia.org/wiki/S%C3%A3o_Paulo_Cathedral"
+  },
+  {
+    "name": "football's Museum",
+    "image": "museu_fut.webp",
+    "address": "Praça Charles Miller, São Paulo, SP",
+    "description": "A museum dedicated to Brazil’s passion for football, located inside the historic Pacaembu Stadium.",
+    "url":"https://museudofutebol.org.br/"
+  },
+  {
+    "name": "Batman's Alley",
+    "image": "beco.webp",
+    "address": "Vila Madalena, São Paulo, SP",
+    "description": "A famous alley known for its vibrant street art and graffiti by local and international artists.",
+    "url":"https://pt.wikipedia.org/wiki/Beco_do_Batman"
+  },
+  {
+    "name": "Liberdade",
+    "image": "liberdade.webp",
+    "address": "Liberdade, São Paulo, SP",
+    "description": "A neighborhood with a strong Japanese influence, featuring authentic cuisine, shops, and cultural events.",
+    "url":"https://www.viajali.com.br/bairro-liberdade/"
+  },
+  {
+    "name": "MASP",
+    "image": "masp.webp",
+    "address": "Avenida Paulista, 1578, São Paulo, SP",
+    "description": "One of the most important art museums in Brazil, housing an impressive collection of European and Brazilian masterpieces.",
+    "url":"https://masp.org.br/"
+  }
+]
