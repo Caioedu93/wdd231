@@ -12,12 +12,13 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas:
-        "header "
-        "main "
-        "footer ";
+        "header"
+        "main"
+        "footer";
     gap: 20px;
+    min-height: 100vh;
+    width: 100%;
 }
-
 
 header {
     background-image: url('../images/Designer.webp');
@@ -29,22 +30,20 @@ header {
     text-align: center;
     border-bottom: 5px solid #df7318ff;
     grid-area: header;
-}
-
-header image {
     width: 100%;
-    height: auto;
-    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
 }
 
 nav ul li a {
@@ -54,7 +53,8 @@ nav ul li a {
     border-radius: 3px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out, text-decoration 0.3s;
+    padding: 2px;
+    transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
@@ -69,10 +69,9 @@ nav ul li a:hover {
 }
 
 .stats-filters button {
-    align-items: center;
     padding: 10px 15px;
     border: none;
-    background: rgb(0, 0, 0);
+    background: black;
     color: white;
     border-bottom: 5px solid #df7318ff;
     font-size: 16px;
@@ -82,7 +81,6 @@ nav ul li a:hover {
 
 .stats-filters button:hover {
     background: #df7318ff;
-
 }
 
 .stats-list {
@@ -101,29 +99,21 @@ nav ul li a:hover {
 }
 
 .player-card {
-    background: white;
+    background: rgb(213, 213, 206);
     padding: 15px;
-    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     max-width: 250px;
-    display: inline-block;
-    text-align: center;
-    background: rgb(213, 213, 206);
-    box-shadow: 4 8px 12px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-
 .player-card.show {
     opacity: 1;
-    transform: translateY(3000);
+    transform: translateY(0);
 }
-
 
 .player-image {
     width: 150px;
@@ -131,7 +121,6 @@ nav ul li a:hover {
     max-height: 200px;
     border-radius: 10px;
 }
-
 
 .player-card:hover {
     transform: scale(1.05);
@@ -144,39 +133,33 @@ nav ul li a:hover {
     margin-bottom: 5px;
 }
 
-
-
 footer {
     border-top: 5px solid #df7318ff;
     background-color: #1a1a1a;
     color: white;
     padding: 15px;
-    margin-top: 20px;
+    text-align: center;
     grid-area: footer;
-
+    width: 100%;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
     max-width: 900px;
+    margin: 0 auto;
+    gap: 15px;
 }
 
 .footer-contact {
     flex: 1;
     padding: 0 10px;
-    display: block;
-    position: relative;
-    top: 2.5rem;
 }
 
 .footer-bottom {
-    display: blcok;
+    flex: 1;
     text-align: center;
-    position: relative;
-    left: 20rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -198,7 +181,6 @@ footer {
         max-width: 90%;
     }
     nav ul {
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
