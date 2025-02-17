@@ -1,0 +1,621 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "header header"
+        "main main"
+        "footer footer";
+    gap: 20px;
+}
+
+
+header {
+    background-image: url('../images/Designer.webp');
+    background-size: cover;
+    background-color: #1a1a1a;
+    color: #df7318ff;
+    padding: 20px;
+    font-size: xx-large;
+    text-align: center;
+    border-bottom: 5px solid #df7318ff;
+    grid-area: header;
+    width: 100%;
+}
+
+header image {
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background-color: #df7318ff;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul.hidden {
+    display: none;
+}
+
+
+nav ul li a.active {
+    color: #df7318ff;
+    font-weight: bold;
+}
+
+nav ul li a {
+    color: white;
+    background-color: #1a1a1a;
+    border-bottom: 5px solid #df7318ff;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s;
+}
+
+nav ul li a:hover {
+    color: #df7318ff;
+}
+
+nav ul li a.active {
+    color: #df7318ff;
+    font-weight: bold;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-area: main;
+}
+
+
+.description {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/5;
+    font-size: xx-large;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.description img {
+    position: absolute;
+    width: 100%;
+    height: 35rem;
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.description p {
+    position: relative;
+    bottom: 30px;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 25px;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#countdown-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    height: 100px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    position: relative;
+    left: 12rem;
+    z-index: 1;
+
+}
+
+.countdown-box {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 50px;
+    box-shadow: 4 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-label {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.logo-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.logo-image img {
+    max-width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 4 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.upcoming-matches,
+.player-stats {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.upcoming-matches h2,
+.player-stats h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.upcoming-matches p,
+.player-stats p {
+    font-size: 1.6rem;
+}
+
+.player-stats {
+    text-align: center;
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 6/8;
+}
+
+
+.player-card {
+    background: white;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.player-card.show {
+    opacity: 1;
+    transform: translateY(3000);
+}
+
+
+
+.player-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.player-card:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    width: 100%;
+    border-top: 5px solid #df7318ff;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    grid-area: footer;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;
+}
+
+.footer-contact {
+    flex: 1;
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    top: 2.5rem;
+}
+
+.footer-bottom {
+    display: blcok;
+    text-align: center;
+    position: relative;
+    left: 20rem;
+}
+
+
+@media screen and (max-width: 320px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        font-size: large;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .description {
+        padding: 20px;
+        font-size: large;
+    }
+
+    .description img {
+        height: 250px;
+    }
+
+    .description p {
+        font-size: medium;
+        padding: 15px;
+    }
+
+    #countdown {
+        font-size: 1.2rem;
+        width: 200px;
+        height: 80px;
+        left: auto;
+    }
+
+    .countdown-box {
+        background: white;
+        color: black;
+        padding: 20px 25px;
+        border-radius: 5px;
+        text-align: center;
+        box-shadow: 4 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo-image img {
+        height: 200px;
+    }
+
+    .upcoming-matches,
+    .player-stats {
+        padding: 15px;
+    }
+
+    .upcoming-matches h2,
+    .player-stats h2 {
+        font-size: 1.5rem;
+    }
+
+    .upcoming-matches p,
+    .player-stats p {
+        font-size: 1.3rem;
+    }
+
+    .player-card {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        position: static;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        left: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header {
+        font-size: large;
+        padding: 15px;
+        text-align: center;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .description {
+        padding: 20px;
+        font-size: large;
+    }
+
+    .description img {
+        height: 250px;
+    }
+
+    .description p {
+        font-size: medium;
+        padding: 15px;
+    }
+
+    #countdown-container {
+        justify-content: center;
+    }
+
+    #countdown {
+        font-size: 1rem;
+        width: 200px;
+        height: 80px;
+        left: auto;
+        margin: 0 auto;
+    }
+
+    .countdown-box {
+        min-width: 40px;
+        padding: 8px;
+    }
+
+    .logo-image img {
+        height: 200px;
+    }
+
+    .upcoming-matches,
+    .player-stats {
+        padding: 15px;
+        position: relative;
+        top: 5rem;
+        background: none;
+    }
+
+    .upcoming-matches h2,
+    .player-stats h2 {
+        font-size: 1.8rem;
+    }
+
+    .player-stats h2 {
+        display: block;
+        position: relative;
+        bottom: 3rem;
+    }
+
+    .upcoming-matches p,
+    .player-stats p {
+        font-size: 1.3rem;
+
+    }
+
+    .player-card {
+        max-width: 100%;
+        position: relative;
+        bottom: 5rem;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-contact {
+        position: static;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        left: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "main main main"
+            "footer footer footer";
+        gap: 40px;
+    }
+
+    header,
+    footer {
+        width: 100%;
+        grid-column: span 3;
+        text-align: center;
+        padding: 40px;
+    }
+
+    header {
+        font-size: 2.5rem;
+        padding: 40px;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    .main-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .description {
+        padding: 50px;
+        font-size: 2rem;
+
+    }
+
+    .description img {
+        width: 20rem;
+        height: 100%;
+    }
+
+    .description p {
+        font-size: 1.4rem;
+        padding: 40px;
+        height: 40rem;
+    }
+
+    #countdown-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #countdown {
+        font-size: 2.2rem;
+        width: 350px;
+        height: 130px;
+        left: auto;
+    }
+
+    .countdown-box {
+        min-width: 80px;
+        padding: 20px;
+    }
+
+    .logo-image img {
+        height: 450px;
+    }
+
+    .upcoming-matches,
+    .player-stats {
+        padding: 40px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .upcoming-matches h2,
+    .player-stats h2 {
+        font-size: 2.2rem;
+    }
+
+    .upcoming-matches p,
+    .player-stats p {
+        font-size: 2rem;
+    }
+
+    .player-card {
+        max-width: 350px;
+    }
+
+    footer {
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer-content {
+        max-width: 1400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Eduardo">
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Friday Night Sports Hub">
+    <meta property="og:description"
+        content="O hub digital para acompanhar presença, horários dos jogos, pontuações e assistências dos jogadores!">
+    <meta property="og:image" content="https://caioedu93.github.io/wdd231/project/images/Designer.jpeg">
+    <meta property="og:url" content="https://caioedu93.github.io/wdd231/project/index.html">
+    <meta property="og:site_name" content="Friday Night Sports Hub">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Friday Night Sports Hub">
+    <meta name="twitter:description"
+        content="O hub digital para acompanhar presença, horários dos jogos, pontuações e assistências dos jogadores!">
+    <meta name="twitter:image" content="https://caioedu93.github.io/wdd231/project/images/Designer.jpeg/twitter-card.jpg">
+    <meta name="twitter:site" content="@USOYKIOHRA">
+    <title>Friday Night Sports Hub</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico">
+    <head>
+        <link rel="preload" as="image" href="images/estadio.webp">
+        </head>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Friday Night Sports Hub</h1>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="stats.html">Stats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="description" >
+            <img src="images/estadio.webp" alt="Descrição da imagem" loading="lazy" width="1200" height="900">
+            <p>The website serves as a digital hub for tracking player attendance,<br> game schedules, scores, and
+                assists.<br> It will also allow new players to register and join the group.</p>
+        </section>
+
+        <section class="upcoming-matches">
+            <h2>Upcoming Matches</h2>
+            <p id="next_game"></p>
+            <p id="countdown"></p>
+            <div class="logo-image">
+                <img src="images/fé.webp" alt="logo" width="300" height="300">
+            </div>
+        </section>
+
+        <section class="player-stats">
+            <h2>Player Stats</h2>
+        </section>
+        <section id="top-scorers" class="player-stats">
+            <h2>Top Scorers</h2>
+            <div id="top-scorers-container"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content" id="footer-content"></div>
+        <div class="footer-bottom">
+            <p id="lastModified"></p>
+            <p>&copy; WDD231 | Caio Eduardo Jesus de Paula | Brasil</p>
+        </div>
+    </footer>
+
+    <script src="scripts/next_game.js" defer></script>
+    <script src="scripts/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+{
+  "players": [
+    {
+      "name": "Gabriel Almeida",
+      "image": "player1.webp",
+      "age": 27,
+      "height": "1.82m",
+      "goals_scored": 10,
+      "assists": 5,
+      "average_attendance": 88
+    },
+    {
+      "name": "Lucas Ferreira",
+      "image": "player2.webp",
+      "age": 25,
+      "height": "1.78m",
+      "goals_scored": 15,
+      "assists": 7,
+      "average_attendance": 90
+    },
+    {
+      "name": "Thiago Costa",
+      "image": "player3.webp",
+      "age": 24,
+      "height": "1.80m",
+      "goals_scored": 12,
+      "assists": 3,
+      "average_attendance": 85
+    },
+    {
+      "name": "Rafael Mendes",
+      "image": "player4.webp",
+      "age": 26,
+      "height": "1.83m",
+      "goals_scored": 8,
+      "assists": 6,
+      "average_attendance": 87
+    },
+    {
+      "name": "Bruno Oliveira",
+      "image": "player5.webp",
+      "age": 28,
+      "height": "1.76m",
+      "goals_scored": 9,
+      "assists": 4,
+      "average_attendance": 82
+    },
+    {
+      "name": "Felipe Martins",
+      "image": "player6.webp",
+      "age": 23,
+      "height": "1.79m",
+      "goals_scored": 6,
+      "assists": 10,
+      "average_attendance": 84
+    },
+    {
+      "name": "Ricardo Souza",
+      "image": "player7.webp",
+      "age": 30,
+      "height": "1.81m",
+      "goals_scored": 14,
+      "assists": 5,
+      "average_attendance": 91
+    },
+    {
+      "name": "Diego Rocha",
+      "image": "player8.webp",
+      "age": 29,
+      "height": "1.85m",
+      "goals_scored": 11,
+      "assists": 7,
+      "average_attendance": 89
+    },
+    {
+      "name": "André Lima",
+      "image": "player9.webp",
+      "age": 22,
+      "height": "1.74m",
+      "goals_scored": 5,
+      "assists": 3,
+      "average_attendance": 79
+    },
+    {
+      "name": "Marcelo Duarte",
+      "image": "player10.webp",
+      "age": 26,
+      "height": "1.77m",
+      "goals_scored": 13,
+      "assists": 8,
+      "average_attendance": 92
+    },
+    {
+      "name": "Eduardo Nascimento",
+      "image": "player11.webp",
+      "age": 24,
+      "height": "1.80m",
+      "goals_scored": 7,
+      "assists": 6,
+      "average_attendance": 86
+    },
+    {
+      "name": "Henrique Barbosa",
+      "image": "player12.webp",
+      "age": 25,
+      "height": "1.78m",
+      "goals_scored": 4,
+      "assists": 5,
+      "average_attendance": 81
+    }
+  ]
+}

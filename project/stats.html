@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Eduardo">
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Friday Night Sports Hub">
+    <meta property="og:description"
+        content="O hub digital para acompanhar presença, horários dos jogos, pontuações e assistências dos jogadores!">
+    <meta property="og:image" content="https://caioedu93.github.io/wdd231/project/images/Designer.jpeg">
+    <meta property="og:url" content="https://caioedu93.github.io/wdd231/project/stats.html">
+    <meta property="og:site_name" content="Friday Night Sports Hub">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Friday Night Sports Hub">
+    <meta name="twitter:description"
+        content="O hub digital para acompanhar presença, horários dos jogos, pontuações e assistências dos jogadores!">
+    <meta name="twitter:image" content="https://caioedu93.github.io/wdd231/project/images/Designer.jpeg/twitter-card.jpg">
+    <meta name="twitter:site" content="@USOYKIOHRA">
+    <title>Player Stats</title>
+    <link rel="stylesheet" href="styles/stats.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Player Stats</h1>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="stats.html">Stats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="stats-filters">
+            <button id="all-players-btn" data-type="all">All Players</button>
+            <button id="top-goals-btn" data-type="goals">Top Scorers</button>
+            <button id="top-assists-btn" data-type="assists">Top Assists</button>
+            <button id="top-attendance-btn" data-type="attendance">Top Attendance</button>
+        </section>
+
+        <h1 id="stats-title" class="stats-title"></h1>
+
+        <section id="stats-container" class="stats-list"></section>
+    </main>
+
+    <footer>
+        <div class="footer-content" id="footer-content"></div>
+        <div class="footer-bottom">
+            <p id="lastModified"></p>
+            <p>&copy; WDD231 | Caio Eduardo Jesus de Paula | Brasil</p>
+        </div>
+    </footer>
+
+    <script src="scripts/stats.js"></script>
+</body>
+</html>

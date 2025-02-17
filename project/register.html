@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Eduardo">
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Friday Night Sports Hub">
+    <meta property="og:description"
+        content="O hub digital para acompanhar presença, horários dos jogos, pontuações e assistências dos jogadores!">
+    <meta property="og:image" content="https://caioedu93.github.io/wdd231/project/images/Designer.jpeg">
+    <meta property="og:url" content="https://caioedu93.github.io/wdd231/project/register.html">
+    <meta property="og:site_name" content="Friday Night Sports Hub">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Friday Night Sports Hub">
+    <meta name="twitter:description"
+        content="O hub digital para acompanhar presença, horários dos jogos, pontuações e assistências dos jogadores!">
+    <meta name="twitter:image" content="https://caioedu93.github.io/wdd231/project/images/Designer.jpeg/twitter-card.jpg">
+    <meta name="twitter:site" content="@USOYKIOHRA">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles/register.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Register</h1>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="stats.html">Stats</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-wrapper">
+        <main>
+            <div class="logo-image">
+                <img src="images/fé.webp" alt="logo">
+            </div>
+            <h2>Join The Friday Night Sports Hub</h2>
+            <form action="thankyou.html" method="get" class="design">
+
+                <label for="first_name">First Name*</label>
+                <input type="text" id="first_name" name="first_name" required>
+
+                <label for="last_name">Last Name*</label>
+                <input type="text" id="last_name" name="last_name" required>
+
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Mobile Phone*</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="14" required>
+
+                <label for="height">Height (in cm):</label>
+                <input type="number" id="height" name="height" min="150" required>
+
+                <label for="position">Position*</label>
+                <select id="position" name="Position" required>
+                    <option value="Goalkeeper">Goalkeeper</option>
+                    <option value="Defender">Defender</option>
+                    <option value="Left winger">Left winger</option>
+                    <option value="Right winger">Right winger</option>
+                    <option value="Pivot (forward)">Pivot (forward)</option>
+                    <option value="Fly Goalkeeper">Fly Goalkeeper</option>
+                </select>
+
+                <label for="foot">Left-footed or right-footed</label>
+                <div id="foot" class="radio-group">
+                    <label class="radio-label">
+                        <input type="radio" name="foot" value="left" required> Left
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="foot" value="right" required> Right
+                    </label>
+                </div>
+
+                <button type="submit">Join Now</button>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content" id="footer-content"></div>
+        <div class="footer-bottom">
+            <p id="lastModified"></p>
+            <p>&copy; WDD231 | Caio Eduardo Jesus de Paula | Brasil</p>
+        </div>
+    </footer>
+</body>
+
+
+</html>
